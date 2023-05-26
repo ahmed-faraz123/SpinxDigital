@@ -16,23 +16,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="hamburger show">
-        <ul>
-            <li><a href="">Work</a></li>
-            <li><a href="">Expertise</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Insights</a></li>
-        </ul>
-    </div>
+<div class="smooth-scroll-wrapper">
     <header class="nav">
-        <a href="#" class="logo"><img src="logo.png" alt="Logo" width="132" height="32"></a>
+        <a href="#" class="logo"><img src="logo.png" alt="Logo" width="132" height="32" class="logoimg"></a>
+
 
         <ul class="navbar">
-            <li><a href="#" class="active" class="r">Work</a></li>
-            <li><a href="#" class="active"  class="r">Expertise</a></li>
-            <li><a href="#" class="active"  class="r">About</a></li>
-            <li><a href="#" class="active" class="r">Insights</a></li>
+            <li><a href="#" class="r" >Work</a></li>
+            <li><a href="#" class="r">Expertise</a></li>
+            <li><a href="#" class="r">About</a></li>
+            <li><a href="#" class="r">Insights</a></li>
         </ul>
+
 
         <div class="sproject">
             <marquee>
@@ -41,8 +36,21 @@
             <div class="bx bx-menu" id="menu-icon"></div>
         </div>
 
-        <div class="ham">
-            <ion-icon name="filter-outline"></ion-icon>
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger"><div></div></div>
+            <div class="menu">
+                <div>
+                    <div>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -61,7 +69,7 @@
         <div class="aboutimg">
             <img class="imgaboutimg" width = "294" height="308" src="https://cdn-eahjn.nitrocdn.com/ChEvwayTHZmZJUAdsUNMLXuXZdBprFoQ/assets/images/optimized/rev-3bf3184/app/uploads/2022/09/image-intro1.jpg" alt="">
         </div>
-        <div class="about-con">
+        <div class="about-con reveal">
 
             <h2>We are a web design company in Los Angeles</h2>
             <p>At SPINX Digital, our team of innovators and digital marketers in tech and design bring skills above and beyond the ordinary to every project.</p>
@@ -72,17 +80,17 @@
         <div class="aboutimg-1">
             <img class="imgaboutimg" width = "294" height="308" src="https://cdn-eahjn.nitrocdn.com/ChEvwayTHZmZJUAdsUNMLXuXZdBprFoQ/assets/images/optimized/rev-3bf3184/app/uploads/2022/09/image-intro3.jpg" alt="">
         </div>
-        <div class="about-con" id="about-2">
+        <div class="about-con reveal" id="about-2">
             <p>Our Los Angeles <a href=""><span>web design</span></a> and <a href=""><span>development</span></a> team is involved in professional B2B and B2C web design and development, <a href=""><span>mobile applications, digital strategy,</span></a> user experience, advertising, social media, <a href=""><span>content management systems</span></a>, and <a href=""><span>email marketing initiatives.</span></a></p>
         </div>
         <div class="aboutimg-2">
-            <img class="imgaboutimg" width = "294" height="308" src="https://cdn-eahjn.nitrocdn.com/ChEvwayTHZmZJUAdsUNMLXuXZdBprFoQ/assets/images/optimized/rev-b6fca84/app/uploads/2022/09/image-intro2.jpg" alt="">
+            <img class="imgaboutimg" width = "294" height="308" src="https://cdn-eahjn.nitrocdn.com/ChEvwayTHZmZJUAdsUNMLXuXZdBprFoQ/assets/images/optimized/rev-a039dd3/app/uploads/2022/09/image-intro2.jpg" alt="">
         </div>
     </div>
 
     <div class="awards-container">
-        <h5>Award-Winning Digital Agency</h5>
-        <div class="awards">
+        <h5 class="reveal">Award-Winning Digital Agency</h5>
+        <div class="awards reveal">
             <div class="award-item">
                 <ion-icon name="mail-outline"></ion-icon>
                 <p>Quinn Emanuel</p>
@@ -102,19 +110,19 @@
         </div>
     </div>
 
-    <div class="featured">
-        <h4 class="proj">Featured Projects</h4>
-        <div class="featured-container">
-            <div class="feat-cont">
-                <div class="featured-left">
-                        <p>
-                            Willkie Website Redesign &<br>Development
-                        </p>
-                        <h3>A High Stakes Legal Website Redesign</h3>
-                </div>
-                <div class="featured-right">
-                    <img src="web1.png" alt="Website No.1">
-                </div>
+    <div class="feat-tit-cont">
+        <h3 class="feat-title">Featured Projects</h3>
+    </div>
+
+    <div class="f2" style="background-color: #16171A;">
+        <div class="featured-cont">
+            <div class="fleft">
+                <p>TWillkie Website Redesign &<br>Development</p>
+                <h3 style="color: #fff;">A High Stakes Legal Website Redesign</h3>
+
+            </div>
+            <div class="fright" style="background-color: #3E2268;">
+                <img src="web1.png" alt="Website No.2">
             </div>
         </div>
     </div>
@@ -149,51 +157,51 @@
 
     <div class="log-con2">
         <div class="log-container2">
-            <div class="log-left">
+            <div class="log-left reveal">
                 <h3>Helping Brands Big and Small</h3>
             </div>
-            <div class="log-right">
+            <div class="log-right reveal">
                 <p>We are proud to have some of the most well-known and respected corporate clients – but we love to help start-ups and new brands too.</p>
             </div>
         </div>
     </div>
 
     <div class="logos">
-        <div class="logos-slide">
-            <img src="3m.svg" />
-            <img src="barstool-store.svg" />
-            <img src="budweiser.svg" />
-            <img src="buzzfeed.svg" />
-            <img src="forbes.svg" />
-            <img src="macys.svg" />
-            <img src="menshealth.svg" />
-            <img src="mrbeast.svg" />
-            <img src="3m.svg" />
-            <img src="barstool-store.svg" />
-            <img src="budweiser.svg" />
-            <img src="buzzfeed.svg" />
+        <div class="logos-slide reveal">
+            <img src="./logos/3m.svg" />
+            <img src="./logos/barstool-store.svg" />
+            <img src="./logos/budweiser.svg" />
+            <img src="./logos/buzzfeed.svg" />
+            <img src="./logos/forbes.svg" />
+            <img src="./logos/macys.svg" />
+            <img src="./logos/menshealth.svg" />
+            <img src="./logos/mrbeast.svg" />
+            <img src="./logos/3m.svg" />
+            <img src="./logos/barstool-store.svg" />
+            <img src="./logos/budweiser.svg" />
+            <img src="./logos/buzzfeed.svg" />
         </div>
     </div>
     <div class="logos2">
-        <div class="logos-slide" style="filter: invert(100%);">
-            <img src="3m.svg" />
-            <img src="barstool-store.svg" />
-            <img src="budweiser.svg" />
-            <img src="buzzfeed.svg" />
-            <img src="forbes.svg" />
-            <img src="macys.svg" />
-            <img src="menshealth.svg" />
-            <img src="mrbeast.svg" />
-            <img src="3m.svg" />
-            <img src="barstool-store.svg" />
-            <img src="budweiser.svg" />
-            <img src="buzzfeed.svg" />
+        <div class="logos-slide reveal" style="filter: invert(100%);">
+            <img src="./logos/3m.svg" />
+            <img src="./logos/barstool-store.svg" />
+            <img src="./logos/budweiser.svg" />
+            <img src="./logos/buzzfeed.svg" />
+            <img src="./logos/forbes.svg" />
+            <img src="./logos/macys.svg" />
+            <img src="./logos/menshealth.svg" />
+            <img src="./logos/mrbeast.svg" />
+            <img src="./logos/3m.svg" />
+            <img src="./logos/barstool-store.svg" />
+            <img src="./logos/budweiser.svg" />
+            <img src="./logos/buzzfeed.svg" />
         </div>
     </div>
 
 
     <div class="expertise" id="accc2">
-        <div class="expert-container">
+        <div class="expert-container reveal">
             <div class="expert-left">
                 <p>OUR EXPERTISE</p>
                 <h3>We are<br>innovators in<br>creative web<br>design in Los<br>Angeles.</h3>
@@ -356,59 +364,117 @@
     </div>
 
     <div class="log-con">
-        <div class="log-container">
+        <div class="log-container reveal">
             <h3>We are experts in leading industry standard platforms & technologies.</h3>
         </div>
     </div>
 
     <div class="logos3">
-        <div class="logos-slide">
-            <img src="3m.svg" />
-            <img src="barstool-store.svg" />
-            <img src="budweiser.svg" />
-            <img src="buzzfeed.svg" />
-            <img src="forbes.svg" />
-            <img src="macys.svg" />
-            <img src="menshealth.svg" />
-            <img src="mrbeast.svg" />
-            <img src="3m.svg" />
-            <img src="barstool-store.svg" />
-            <img src="budweiser.svg" />
-            <img src="buzzfeed.svg" />
+        <div class="logos-slide reveal">
+            <img src="./logos/3m.svg" />
+            <img src="./logos/barstool-store.svg" />
+            <img src="./logos/budweiser.svg" />
+            <img src="./logos/buzzfeed.svg" />
+            <img src="./logos/forbes.svg" />
+            <img src="./logos/macys.svg" />
+            <img src="./logos/menshealth.svg" />
+            <img src="./logos/mrbeast.svg" />
+            <img src="./logos/3m.svg" />
+            <img src="./logos/barstool-store.svg" />
+            <img src="./logos/budweiser.svg" />
+            <img src="./logos/buzzfeed.svg" />
         </div>
     </div>
     <div class="logos4">
-        <div class="logos-slide" style="filter: invert(100%);">
-            <img src="3m.svg" />
-            <img src="barstool-store.svg" />
-            <img src="budweiser.svg" />
-            <img src="buzzfeed.svg" />
-            <img src="forbes.svg" />
-            <img src="macys.svg" />
-            <img src="menshealth.svg" />
-            <img src="mrbeast.svg" />
-            <img src="3m.svg" />
-            <img src="barstool-store.svg" />
-            <img src="budweiser.svg" />
-            <img src="buzzfeed.svg" />
+        <div class="logos-slide reveal" style="filter: invert(100%);">
+            <img src="./logos/3m.svg" />
+            <img src="./logos/barstool-store.svg" />
+            <img src="./logos/budweiser.svg" />
+            <img src="./logos/buzzfeed.svg" />
+            <img src="./logos/forbes.svg" />
+            <img src="./logos/macys.svg" />
+            <img src="./logos/menshealth.svg" />
+            <img src="./logos/mrbeast.svg" />
+            <img src="./logos/3m.svg" />
+            <img src="./logos/barstool-store.svg" />
+            <img src="./logos/budweiser.svg" />
+            <img src="./logos/buzzfeed.svg" />
         </div>
     </div>
 
     <div class="trust">
         <div class="trust-container">
-            <div class="trust-left">
+            <div class="trust-left reveal">
                 <h1>Trust our team of website experts</h1>
             </div>
-            <div class="trust-right">
+            <div class="trust-right reveal">
                 <p>We will handle the entire development lifecycle of your project, from your website idea to creative website design to the web development services needed to publishing.</p><br><br>
                 <a href="">About our Process</a>
             </div>
         </div>
     </div>
 
+    <div class="accord-2">
+        <div class="accord-2-con">
+            <article class="horz-accordion">
+
+                <section id="accc1">
+                    <h2><a href="#accc1">Discovery</a></h2>
+                    <p>The first phase of a good web development project is Discovery. In short, it’s the process of learning.<br>
+
+                        SPINX needs to learn as much as we can about you, your organization’s goals and users, and the required features and functionality of the site. With all this information in hand, we begin to lay the foundation for an optimal website.<br><br><br>
+
+                        The Discovery phase will begin with information gathering. Conversations between our Project Management, User Experience and Development teams, and key stakeholders at your end, will further define the goals of the new website, determine the key user personas, and detail the desired functionality for the finished product.</p>
+                </section>
+
+                <section id="acccc2">
+                    <h2><a href="#acccc2">Strategy</a></h2>
+                    <p>SPINX will use findings from the Discovery phase as the basis for strategy and suggestions for the site design.<br><br><br>
+
+                        In this phase, we will make recommendations for the user experience and information architecture including a site map, core features and functionality, and how to display content in a way that is intuitive, engaging and achieves objectives.</p>
+                </section>
+
+                <section id="accc3">
+                    <h2><a href="#accc3">Design</a></h2>
+                    <p>In the third phase, the creative process will begin with a couple designs for a home page.<br><br><br>
+
+                        We find that basic restraints in terms of color or typography give us the freedom to be very creative with background elements, imagery, spacing between page elements, and animations to help determine the desired look and feel for the website.<br><br><br>
+
+                        Once the home page has been approved and the overarching look of the site is locked in, we will then design the remaining pages required for the site.</p>
+                </section>
+
+                <section id="accc4">
+                    <h2><a href="#accc4">Programming</a></h2>
+                    <p>SPINX will mark-up the approved creatives to HTML 5, CSS, JQuery, Angular/ React, among with a suitable programming language and test all code in the latest version of designated browsers. All websites we create are coded as responsive websites using the latest version of Bootstrap, and respond in a way that provides an optimized experience for visitors on mobile devices.<br><br><br>
+
+                        The chosen content management system will also be integrated and customized to allow easy updates and management of site content after launch. In addition, our team can also help with content migration during this phase to ensure all content and assets are moved from any existing digital properties into the new site.</p>
+                </section>
+
+                <section id="accc5">
+                    <h2><a href="#accc5">Evaluation</a></h2>
+                    <p>Phase 5, one of the most critical steps, is where SPINX reviews all facets of the site prior to pushing it live.<br>
+
+                        This includes review of all functionality and content. Reviewing all content to make sure all expectations have been met. modern tools for testing. After a thorough QA process, client is trained on the backend system and will have the opportunity to review and submit any bugs found during their QA process on a platform that is very easy to use tracking system.<br><br><br>
+
+                        You will have complete insight into what bugs are being worked on, what are pending, which ones are ready to reviewed by your team and upon successful completion they can be moved into the completed bin.</p>
+                </section>
+
+                <section id="accc6">
+                    <h2><a href="#accc6">Launch</a></h2>
+                    <p>With a launch plan in place, the final phase of the project is to launch the website publicly.<br>
+
+                        This includes reviewing all files and confirming one last time that all content is as viewable, accurate and functional as it was on the development server.<br>
+
+                        Once your new site is live (yay!), our team is available for ongoing website optimization and maintenance needs.</p>
+                </section>
+
+            </article>
+        </div>
+    </div>
+
 
     <div class="learn">
-        <div class="learn-container">
+        <div class="learn-container reveal">
             <h3>Learn</h3>
             <hr/>
             <div class="learn-item" id="d1">
@@ -437,7 +503,7 @@
     </div>
 
 
-    <div class="infincont">
+    <div class="infincont reveal">
         <div class="infinspinx">
             <h1>SPINX</h1>
             <h1>SPINX</h1>
@@ -446,7 +512,8 @@
 
         </div>
 
-       <div class="infinspinx">
+        <div class="infinspinx">
+            <h1>SPINX</h1>
             <h1>SPINX</h1>
             <h1>SPINX</h1>
             <h1>SPINX</h1>
@@ -468,9 +535,11 @@
         </div>
     </div>
 
+
+
     <div class="cursor"></div>
     <div class="cursor2"></div>
-
+</div>
     <script>
         var copy = document.querySelector(".logos-slide").cloneNode(true);
         document.querySelector(".logos").appendChild(copy);
