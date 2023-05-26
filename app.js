@@ -1,3 +1,42 @@
+if (window.innerWidth <= 1000) {
+    var aboutimg = document.querySelector(".aboutimg");
+    window.addEventListener('scroll', function() {
+        var value = 100000 - window.scrollY;
+        aboutimg.style.cssText = "top: " + value + "px;";
+    });
+
+    var aboutimg1 = document.querySelector(".aboutimg-1");
+    window.addEventListener('scroll', function() {
+        var value = 3500 - window.scrollY;
+        aboutimg1.style.cssText = "top: " + value + "px;";
+    });
+
+    var aboutimg2 = document.querySelector(".aboutimg-2");
+    window.addEventListener('scroll', function() {
+        var value = 3150 - window.scrollY;
+        aboutimg2.style.cssText = "top: " + value + "px;";
+    });
+} else {
+    var aboutimg = document.querySelector(".aboutimg");
+    window.addEventListener('scroll', function() {
+        var value =  1650-window.scrollY;
+        aboutimg.style.cssText = "top: " + value + "px;";
+    });
+
+    var aboutimg1 = document.querySelector(".aboutimg-1");
+    window.addEventListener('scroll', function() {
+        var value =  3500-window.scrollY;
+        aboutimg1.style.cssText = "top: " + value + "px;";
+    });
+
+    var aboutimg2 = document.querySelector(".aboutimg-2");
+    window.addEventListener('scroll', function() {
+        var value =  3150-window.scrollY;
+        aboutimg2.style.cssText = "top: " + value + "px;";
+    });
+}
+
+
 let menu = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
@@ -23,16 +62,41 @@ function mouseOver() {
 
 document.addEventListener('scroll', () => {
     const header = document.querySelector('.nav');
-    const r = document.querySelector('.r');
+    const x = document.querySelector('.navbar');
+    const y = x.getElementsByTagName("a");
+    const logo = document.querySelector('.logoimg');
 
     if (window.scrollY > 0) {
         header.classList.add('scrolled');
-        r.classList.add('scrolla');
+        for (let i = 0; i < y.length; i++) {
+            y[i].style.color = "#000";
+        }
+        logo.style.filter = "invert(100%)";
     } else {
         header.classList.remove('scrolled');
-        r.classList.remove('scrolla');
+        for (let i = 0; i < y.length; i++) {
+            y[i].style.color = "#fff";
+        }
+        logo.style.filter = "invert(0%)";
     }
 });
+
+window.addEventListener('scroll', reveal);
+function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+
+    for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+
+        if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+        } else {
+            reveals[i].classList.remove("active");
+        }
+    }
+};
 
 
 var logoslide = document.querySelector(".logos");
@@ -43,7 +107,7 @@ window.addEventListener('scroll', function () {
 
 var logoslide2 = document.querySelector(".logos2");
 window.addEventListener('scroll', function () {
-    var value = window.scrollY - 7000;
+    var value = window.scrollY - 6000;
     logoslide2.style.cssText = "left: " + value + "px;";
 });
 
@@ -61,23 +125,6 @@ window.addEventListener('scroll', function () {
 });
 
 
-var aboutimg = document.querySelector(".aboutimg");
-window.addEventListener('scroll', function() {
-    var value =  1650-window.scrollY;
-    aboutimg.style.cssText = "top: " + value + "px;";
-});
-
-var aboutimg1 = document.querySelector(".aboutimg-1");
-window.addEventListener('scroll', function() {
-    var value =  3500-window.scrollY;
-    aboutimg1.style.cssText = "top: " + value + "px;";
-});
-
-var aboutimg2 = document.querySelector(".aboutimg-2");
-window.addEventListener('scroll', function() {
-    var value =  3150-window.scrollY;
-    aboutimg2.style.cssText = "top: " + value + "px;";
-});
 
 $(document).ready(function(){
 
@@ -125,6 +172,10 @@ var hamburger = document.querySelector(".hamburger");
 document.addEventListener("click", function() {
     hamburger.classList.add('show');
 });
+
+
+
+
 
 
 
