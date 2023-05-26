@@ -1,40 +1,4 @@
-if (window.innerWidth <= 1000) {
-    var aboutimg = document.querySelector(".aboutimg");
-    window.addEventListener('scroll', function() {
-        var value = 100000 - window.scrollY;
-        aboutimg.style.cssText = "top: " + value + "px;";
-    });
 
-    var aboutimg1 = document.querySelector(".aboutimg-1");
-    window.addEventListener('scroll', function() {
-        var value = 3500 - window.scrollY;
-        aboutimg1.style.cssText = "top: " + value + "px;";
-    });
-
-    var aboutimg2 = document.querySelector(".aboutimg-2");
-    window.addEventListener('scroll', function() {
-        var value = 3150 - window.scrollY;
-        aboutimg2.style.cssText = "top: " + value + "px;";
-    });
-} else {
-    var aboutimg = document.querySelector(".aboutimg");
-    window.addEventListener('scroll', function() {
-        var value =  1650-window.scrollY;
-        aboutimg.style.cssText = "top: " + value + "px;";
-    });
-
-    var aboutimg1 = document.querySelector(".aboutimg-1");
-    window.addEventListener('scroll', function() {
-        var value =  3500-window.scrollY;
-        aboutimg1.style.cssText = "top: " + value + "px;";
-    });
-
-    var aboutimg2 = document.querySelector(".aboutimg-2");
-    window.addEventListener('scroll', function() {
-        var value =  3150-window.scrollY;
-        aboutimg2.style.cssText = "top: " + value + "px;";
-    });
-}
 
 
 let menu = document.querySelector('#menu-icon');
@@ -107,7 +71,7 @@ window.addEventListener('scroll', function () {
 
 var logoslide2 = document.querySelector(".logos2");
 window.addEventListener('scroll', function () {
-    var value = window.scrollY - 6000;
+    var value = window.scrollY - 7000;
     logoslide2.style.cssText = "left: " + value + "px;";
 });
 
@@ -125,6 +89,23 @@ window.addEventListener('scroll', function () {
 });
 
 
+var aboutimg = document.querySelector(".aboutimg");
+window.addEventListener('scroll', function() {
+    var value =  1650-window.scrollY;
+    aboutimg.style.cssText = "top: " + value + "px;";
+});
+
+var aboutimg1 = document.querySelector(".aboutimg-1");
+window.addEventListener('scroll', function() {
+    var value =  3500-window.scrollY;
+    aboutimg1.style.cssText = "top: " + value + "px;";
+});
+
+var aboutimg2 = document.querySelector(".aboutimg-2");
+window.addEventListener('scroll', function() {
+    var value =  3150-window.scrollY;
+    aboutimg2.style.cssText = "top: " + value + "px;";
+});
 
 $(document).ready(function(){
 
