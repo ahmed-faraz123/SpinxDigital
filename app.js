@@ -65,13 +65,13 @@ function reveal() {
 
 var logoslide = document.querySelector(".logos");
 window.addEventListener('scroll', function () {
-    var value = 5000 - window.scrollY;
+    var value = 4600 - window.scrollY;
     logoslide.style.cssText = "left: " + value + "px;";
 });
 
 var logoslide2 = document.querySelector(".logos2");
 window.addEventListener('scroll', function () {
-    var value = window.scrollY - 7000;
+    var value = window.scrollY - 6000;
     logoslide2.style.cssText = "left: " + value + "px;";
 });
 
