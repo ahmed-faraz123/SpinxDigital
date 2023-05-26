@@ -1617,6 +1617,11 @@ hr {
         display: block;
     }
 
+    .aboutimg-2,
+    .aboutimg-1 {
+        display: none;
+    }
+
 
     .main {
         height: 60vh;
