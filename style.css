@@ -458,14 +458,14 @@ header {
 
 .aboutimg-1 {
     position: absolute;
-    z-index: 1;
+    z-index: 10000;
     left: 5vw;
     transition: .10s ease;
 }
 
 .aboutimg-2 {
     position: absolute;
-    z-index: 1;
+    z-index: 10000;
     right: 7vw;
     transition: .10s ease;
 }
